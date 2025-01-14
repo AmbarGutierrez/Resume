@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #28a745, #218838);
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header p {
+  margin: 0.5em 0 1em;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+header nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease-in-out;
+}
+
+header nav a:hover {
+  color: #ffc107;
+}
+
+/* Section Styles */
+section {
+  padding: 3em 2em;
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 2em;
+}
+
+h2 {
+  color: #28a745;
+  font-size: 2em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5em;
+}
+
+.job h3 {
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.job p {
+  color: #6c757d;
+  font-style: italic;
+  margin-top: 0.2em;
+}
+
+ul {
+  padding-left: 1.5em;
+  list-style: disc;
+}
+
+li {
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  background: #343a40;
+  color: #f8f9fa;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Links */
+a {
+  color: #28a745;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #1e7e34;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  header nav a {
+    font-size: 1em;
+    margin: 0 10px;
+  }
+
+  section {
+    padding: 2em 1em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  .job h3 {
+    font-size: 1.4em;
+  }
+}
