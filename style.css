@@ -10,7 +10,7 @@ body {
 
 /* Sticky Header */
 header {
-  background: linear-gradient(135deg, #28a745, #218838);
+  background: linear-gradient(135deg, #4a90e2, #357edd);
   color: white;
   text-align: center;
   padding: 2em 0;
@@ -49,7 +49,7 @@ header nav a {
 }
 
 header nav a:hover, header nav a.active {
-  background-color: #ffc107;
+  background-color: #ffcc00;
   color: #343a40;
   border-radius: 5px;
 }
@@ -73,7 +73,7 @@ section img {
 }
 
 h2 {
-  color: #28a745;
+  color: #4a90e2;
   font-size: 2em;
   margin-bottom: 1em;
   border-bottom: 2px solid #e9ecef;
@@ -116,14 +116,14 @@ li {
 
 .project h3 {
   font-size: 1.5em;
-  color: #28a745;
+  color: #4a90e2;
   margin: 0;
 }
 
 .project a {
   display: inline-block;
   margin-top: 0.5em;
-  color: #007bff;
+  color: #1d70b8;
   text-decoration: none;
   font-weight: bold;
 }
@@ -159,18 +159,18 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover {
-  color: #ffc107;
+  color: #ffcc00;
 }
 
 /* Links */
 a {
-  color: #28a745;
+  color: #4a90e2;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-  color: #1e7e34;
+  color: #357edd;
   text-decoration: underline;
 }
 
