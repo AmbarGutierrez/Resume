@@ -8,13 +8,16 @@ body {
   background-color: #f8f9fa;
 }
 
-/* Header */
+/* Sticky Header */
 header {
   background: linear-gradient(135deg, #28a745, #218838);
   color: white;
   text-align: center;
   padding: 2em 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
@@ -30,17 +33,25 @@ header p {
   font-weight: 300;
 }
 
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 header nav a {
   color: white;
-  margin: 0 20px;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
-  transition: color 0.3s ease-in-out;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-header nav a:hover {
-  color: #ffc107;
+header nav a:hover, header nav a.active {
+  background-color: #ffc107;
+  color: #343a40;
+  border-radius: 5px;
 }
 
 /* Section Styles */
@@ -52,6 +63,13 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin-bottom: 2em;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em 0;
 }
 
 h2 {
@@ -84,17 +102,64 @@ li {
   line-height: 1.5;
 }
 
+/* Project Showcase */
+#projects {
+  padding: 3em 2em;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.project {
+  margin-bottom: 2em;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  color: #28a745;
+  margin: 0;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 footer {
   background: #343a40;
   color: #f8f9fa;
   text-align: center;
   padding: 1.5em 0;
+  margin-top: 2em;
 }
 
 footer p {
   margin: 0;
   font-size: 0.9em;
+}
+
+footer .social-icons {
+  margin-top: 1em;
+}
+
+footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: color 0.3s ease-in-out;
+}
+
+footer .social-icons a:hover {
+  color: #ffc107;
 }
 
 /* Links */
@@ -115,9 +180,9 @@ a:hover {
     font-size: 2.5em;
   }
 
-  header nav a {
-    font-size: 1em;
-    margin: 0 10px;
+  header nav {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   section {
@@ -130,5 +195,9 @@ a:hover {
 
   .job h3 {
     font-size: 1.4em;
+  }
+
+  footer .social-icons {
+    font-size: 1.2em;
   }
 }
